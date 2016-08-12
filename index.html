@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyBootstrap WebPage</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Bootstrap CSS-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-glyphicons.css">
+	<!--My CSS file-->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!-- JS files -->
+	<!--Modernizer JS(It should be before any other custom JS file-->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>	
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- My JS file -->
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body> 
+<!--*************************************	WHOLE CONTAINER 	*******************************************************-->
+	<div class="container" id="main">
+<!--**********************************		HEADER OF WEBPAGE 	********************************************************-->
+		<header class="clearfix">
+			<div class="navbar navbar-fixed-top">
+				<div class="container">
+					
+<!--*******************	 .btn-navbar is used as the toggle for collapsed navbar content 	*****************************-->
+					<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>		
+<!--*****************************************		Logo 	************************************************************-->
+					<a class="navbar-brand" href="#"><img src="images/logo.jpg" alt="Your Logo" id="logoINheader"></a>
+
+					<div class="nav-collapse collapse navbar-responsive-collapse">
+						<ul class="nav navbar-nav">
+							<li class="active">
+								<a href="#">Home</a>
+							</li>
+							<li>
+								<a href="portfolio.html">Portfolio</a>
+							</li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">More <strong class="caret"></strong></a>
+								
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">ONE</a>
+									</li>
+									
+									<li>
+										<a href="#">TWO</a>
+									</li>
+									
+									<li>
+										<a href="#">THREE</a>
+									</li>
+									
+									<li class="divider"></li>
+									
+									<li class="dropdown-header">FOUR</li>
+									
+									<li>
+										<a href="#">FIVE</a>
+									</li>
+									
+									<li>
+										<a href="#">SIX</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<form class="navbar-form pull-left">
+							<input type="text" class="form-control" placeholder="Search here..." id="searchInput">
+						</form>
+						<button type="submit" class="btn btn-default" id="submitINheader"><span class="glyphicon glyphicon-search pull-left"></span></button>
+						<ul class="nav navbar-nav pull-right">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> My Account <strong class="caret" id="strongcaret"></strong></a>
+								
+<!--************************************    DROPDOWN MENU-MY ACCOUNT  ********************************************************-->
+
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings<span class="badge">5</span></a>
+									</li>
+									
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-refresh"></span> Update Profile<span class="badge">2</span></a>
+									</li>
+									
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-briefcase"></span> Billing</a>
+									</li>
+									
+									<li class="divider"></li>
+									
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-off"></span> Sign out</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+				
+				</div>
+			</div>
+		</header>
+<!--******************************************CAROUSEL******************************************************-->
+<div class="container">
+  	<div class="carousel slide" id="myCarousel">
+			
+<!--************************************	 Indicators 	************************************************-->
+				<ol class="carousel-indicators">
+					<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+					<li data-slide-to="1" data-target="#myCarousel"></li>
+					<li data-slide-to="2" data-target="#myCarousel"></li>
+				</ol>
+			
+<!--*************************************	 Wrapper for slides 	*****************************************-->
+				<div class="carousel-inner carousel slide" data-ride="carousel">
+					<div class="item active" id="slide1">
+						<div class="carousel-caption">
+							<h4></h4>
+							<p></p>
+						</div><!-- end carousel-caption-->
+					</div><!-- end item -->
+					
+					<div class="item" id="slide2">
+						<div class="carousel-caption">
+							<h4>Birds</h4>
+							<p>Birds live worldwide and range in size from the 5 cm (2 in) bee hummingbird to the 2.75 m (9 ft) ostrich</p>
+						</div><!-- end carousel-caption-->
+					</div><!-- end item -->
+					
+					<div class="item" id="slide3">
+						<div class="carousel-caption">
+							<h4>Lion</h4>
+							<p>African lion prides consist of up to three males, around a dozen females, and their young, according to National Geographic. </p>
+						</div><!-- end carousel-caption-->
+					</div><!-- end item -->
+				</div>
+				
+<!--********************************************** Controls(LEFT AND RIGHT) *************************************-->
+				<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+				<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+			
+			</div><!-- end myCarousel -->
+</div>
+<!--**************************************	BIG CALLOUT ******************************************************-->
+		<div class="row" id="bigCallout">
+			<div class="col-12">
+				
+				<div class="alert alert-success alert-block fade in" id="successAlert">
+					<button type="button" class="close" data-dismiss="alert">&times;</button>
+					
+					<h4>Some of WildAnimals in india</h4>
+					<p>Greater One-Horned Rhinoceros,Nilgiri Tahr,Bengal Tigers,Asiatic Lion,Black Buck.Lion,Tailed Macaque,
+						Snow Leopard.</p>
+				</div>
+<!--************************************	VISIBLE ON ONLY SMALL DEVICES 		*******************************-->
+				<div class="well well-small visible-sm">
+					<a href="" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"></span> Give us a call!</a>
+				</div>
+				
+				<div class="well">
+					<div class="page-header">
+						<h1><small>About</small>Wild Life</h1>
+					</div>
+
+					<p class="lead">Wildlife traditionally refers to non-domesticated animal species, but has come to include all plants, fungi and other organisms which grow or live wild in an area without being introduced by humans.</p>
+					
+					<a href="" class="btn btn-large btn-primary" id="alertMe">list of wild animals</a>					
+				</div>
+			</div>
+		</div>
+
+	<div class="row" id="moreInfo">
+				<div class="col-sm-6 img-responsive">
+					<h3>Tabbable Content</h3>
+					<div class="tabbable img-responsive">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#tab1" data-toggle="tab">MAP</a></li>
+							<li><a href="#tab2" data-toggle="tab">About</a></li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane active" id="tab1">
+								<h4><span class="glyphicon glyphicon-map-marker"></span> Ninoy Aquino Parks and Wildlife Center <small></small></h4>
+								
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.0834889098583!2d121.04207151424946!3d14.6512019797639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b7059eefe101%3A0x5271f95cbf47428a!2sNinoy+Aquino+Parks+and+Wildlife+Center!5e0!3m2!1sen!2sin!4v1470211287423" width="550" height="350" frameborder="0" style="border:0" allowfullscreen class="img-responsive"></iframe>
+								
+								<p>The Ninoy Aquino Parks and Wildlife Center (NAPWC) traces its beginning as a portion of the 197.8 hectares Quezon Memorial Park (QMP) which was covered under Proclamation No. 42 dated July 5, 1954. With the issuance of Proclamations Nos. 481 and 616 respectively, the park’s area was reduce 64.58 hectares. The larger areas were allocated for Philippine Science High School and the National Government Center which was later on subdivided and developed as the areas occupied by the Central Bank of the Philippines, Lung Center, Kidney Center, and Lungsod ng Kabataan (Children’s Hospital). To date, the NAPWC covers only 22.7 hectares.</p>								
+								
+								<p>At present, the 22.7-hectare NAPWC is under the management and administration of the Protected Areas and Wildlife Bureau-Department of Environment and Natural Resources (DENR) by virtue of Proc. No. 723 dated 25 October 2004 by President Gloria Macapagal-Arroyo. Said proclamation established the park as a protected area and a component of the National Integrated Protected Areas System (NIPAS).</p>
+							</div><!-- end tab-pane -->
+							
+							<div class="tab-pane" id="tab2">
+								<h4>Ninoy Aquino Parks and Wildlife Center <small></small></h4>
+								
+								<img src="images/Ninoy Aquino Parks and Wildlife Center.jpg" class="thumbnail pull-left img-responsive" alt="Placeholder image">
+								
+								<p>The Ninoy Aquino Parks and Wildlife Center (NAPWC) traces its beginning as a portion of the 197.8 hectares Quezon Memorial Park (QMP) which was covered under Proclamation No. 42 dated July 5, 1954. With the issuance of Proclamations Nos. 481 and 616 respectively, the park’s area was reduce 64.58 hectares. The larger areas were allocated for Philippine Science High School and the National Government Center which was later on subdivided and developed as the areas occupied by the Central Bank of the Philippines, Lung Center, Kidney Center, and Lungsod ng Kabataan (Children’s Hospital). To date, the NAPWC covers only 22.7 hectares.</p>								
+								
+								<p>At present, the 22.7-hectare NAPWC is under the management and administration of the Protected Areas and Wildlife Bureau-Department of Environment and Natural Resources (DENR) by virtue of Proc. No. 723 dated 25 October 2004 by President Gloria Macapagal-Arroyo. Said proclamation established the park as a protected area and a component of the National Integrated Protected Areas System (NIPAS).</p>
+								
+								<hr>
+								
+								<a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span>Send feedback</a>
+								
+								<div class="modal fade" id="myModal">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button class="close" data-dismiss="modal">&times;</button>
+												
+												<h4 class="modal-title">Feedback</h4>
+											</div>
+											<div class="modal-body">
+												<h4>Enter your details</h4>
+												
+												
+												<hr>
+												
+												<p><small class="text-muted">Fill the below fields</small></p>
+												
+												<form class="form-horizontal">
+													<div class="form-group">
+														<label class="col-lg-2 control-label" for="inputName">Name</label>
+														<div class="col-lg-10">
+															<input class="form-control" id="inputName" placeholder="Name" type="text">
+														</div>
+													</div>
+													
+													<div class="form-group">
+														<label class="col-lg-2 control-label" for="inputEmail">Email</label>
+														<div class="col-lg-10">
+															<input class="form-control" id="inputEmail" placeholder="Email" type="email">
+														</div>
+													</div>
+													
+													<div class="form-group">
+														<label class="col-lg-2 control-label" for="inputMessage">Message</label>
+														<div class="col-lg-10">
+															<textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
+															<button class="btn btn-success pull-right" type="submit">Send!</button>
+														</div>
+													</div>
+												</form>
+											</div><!-- end modal-body -->
+											
+											<div class="modal-footer">
+												<button class="btn btn-default" data-dismiss="modal" type="button">Cancel</button><!-- <button class="btn btn-primary" type="button">Save changes</button> -->
+											</div><!-- end modal-footer -->
+										</div><!-- end modal-content -->
+									</div><!-- end modal-dialog -->
+								</div><!-- end myModal -->
+								
+							</div><!-- end tab-pane -->
+						</div><!-- end tab-content -->
+					</div><!-- end tabbable -->
+				</div><!-- end col-sm-6 -->
+				
+				<div class="col-sm-6">
+					<h3>More About Ninoy Aquino Parks and Wildlife Center</h3>
+					<p>July 25, 1970, the park was inaugurated and opened to the public by the then President Ferdinand Marcos and the Vice President Fernando Lopez.</p>
+					
+					<h4>History of Ninoy Aquino Parks and Wildlife Center</h4>
+					
+					<div class="list-group">
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">In 1986</h4>
+							<p class="list-group-item-text">In 1986, it was renamed Ninoy Aquino Parks and Wildlife Nature Center (NAPWNC) in honor of the late Senator by virtue of Ministry of Natural Resources (MNR) Administrative Order No. 4 series of 1986.</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">In May 25, 2000</h4>
+							<p class="list-group-item-text">In May 25, 2000, the Ninoy Aquino Parks and Wildlife Nature Center was disestablished as protected area and shall be known as DENR-Wildlife Rescue and Rehabilitation Center by virtue of Proclamation No. 312.</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">In August 21, 2002</h4>
+							<p class="list-group-item-text">Steel-cut oats are whole grain groats which have been cut into pieces. They are commonly used in Scotland and Ireland to make porridge.</p>
+						</a>
+					</div>
+					
+					<h4>At present</h4>
+					<p>At present, the 22.7-hectare NAPWC is under the management and administration of the Protected Areas and Wildlife Bureau-Department of Environment and Natural Resources (DENR) by virtue of Proc. No. 723 dated 25 October 2004 by President Gloria Macapagal-Arroyo. Said proclamation established the park as a protected area and a component of the National Integrated Protected Areas System (NIPAS).</p>
+				</div><!-- end col-sm-6 -->
+	</div>
+
+	<div class="row" id="features">
+				<div class="col-sm-4 feature">
+					<div class="panel" id="threecolumn">
+						<div class="panel-heading">
+							<h3 class="panel-title" id="oneofthree">Butterfly</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/wildlife/butterfly.jpg" alt="HTML5" class="img-circle img-responsive" id="one">
+						
+						<p class="paraunderimage">Butterflies are very good fliers. They have two pairs of large wings covered with colorful, iridescent scales in overlapping rows. Lepidoptera (butterflies and moths) are the only insects that have scaly wings. The wings are attached to the butterfly's thorax (mid-section).</p>
+						
+						<a href="#" target="_blank" class="btn btn-warning btn-block">About Butterflies</a>
+					</div>
+				</div><!-- end feature -->
+				
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title" id="twoofthree">Lion</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/wildlife/lion.jpg" alt="CSS3" class="img-circle img-responsive" id="two">
+						
+						<p class="paraunderimage">African lion prides consist of up to three males, around a dozen females, and their young, according to National Geographic. There are prides that have as many as 40 members, though. Asian lions divide themselves into two prides. The females have a pride and the males have a pride.</p>
+						
+						<a href="#" target="_blank" class="btn btn-danger btn-block">About Lions</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title" id="threeofthree">Tiger</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/tiger.jpg" alt="HTML5" class="img-circle img-responsive" id="three">
+						
+						<p class="paraunderimage">The tiger is the largest of all living cat, or felid, species. Native to Asia, there are six living subspecies of tiger: Amur, Bengal, Indochinese,Sumatran, and the South China tiger, thought to exist only in Chinese zoos. The Bali, Javan, and Caspian tiger subspecies went extinct in the 20th century.</p>
+						
+						<a href="#" target="_blank" class="btn btn-warning btn-block">About Tigers</a>
+					</div>
+				</div>
+	</div>
+	<div class="jumbotron">
+	<img src="images/tiger.jpg" class="img-responsive">
+	</div>
+	<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="min-width: 2em; width: 100%;">
+    Page Loaded Successfully
+  </div>
+</div>
+<!--*************************************Footer here********************************-->
+	<!--
+	<div class="col-12">
+		<footer>
+			<nav>
+				<p>Contact US:</p>
+				<ul>
+					<li>
+						<a href="https://www.facebook.com/" target="_blank">
+							<img src="images/footer/facebook.png" alt="facebook_logo" class="">
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/" target="_blank">
+							<img src="images/footer/twitter.png" alt="twitter_logo" class="">
+						</a>
+					</li>
+					<li>
+						<a href="https://plus.google.com/explore" target="_blank">
+							<img src="images/footer/google-plus.jpg" alt="google-plus_logo" class="">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/" target="_blank">
+							<img src="images/footer/LinkedIn.jpg" alt="LinkedIn_logo" class="">
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
+	</div>-->
+	<footer>
+			<div class="container">
+				<div class="row" id="footertext">
+					<div class="col-sm-3">
+					<h6>Copyright &copy; 2016. All rights reserved</h6>
+					</div><!-- end col-sm-2 -->					
+					<div class="col-sm-2">
+						<h6 id="navigationINfooter">Navigation</h6>
+						<ul class="unstyled">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Links</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div><!-- end col-sm-2 -->
+					
+					<div class="col-sm-5">
+						<h6 id="followusINfooter">Follow Us</h6>
+						<ul class="unstyled">
+							<li><a href="#">Twitter</a></li>
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Google Plus</a></li>
+						</ul>
+					</div><!-- end col-sm-2 -->
+					
+					<div class="col-sm-2">
+						<h6 id="last">Coded with <span class="glyphicon glyphicon-heart"></span> by VaIbHaV</h6>
+					</div><!-- end col-sm-2 -->
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</footer>
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MyBootstrap PORTFOLIO Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--Bootstrap CSS-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-glyphicons.css">
+	<!--My CSS file-->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<!-- JS files -->
+	<!--Modernizer JS(It should be before any other custom JS file-->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>	
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- My JS file -->
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body> 
+<!--****************************************WHOLE CONTAINER*****************************************************-->
+	<div class="container" id="main">
+<!--****************************************HEADER OF WEBPAGE*****************************************************-->
+		<header class="clearfix">
+
+			<div class="container navbar navbar-fixed-top">
+					
+					<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+				<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>		
+					
+				<a class="navbar-brand" href="#"><img src="images/logo.jpg" alt="Your Logo" id="logoINheader"></a>	
+				<div class="nav-collapse collapse navbar-responsive-collapse">
+					<ul class="nav navbar-nav"> 
+						<li class="active">
+							<a href="index.html">Home</a>
+						</li>
+						
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">More <strong class="caret"></strong></a>
+
+							<!--     DROPDOWN MENU    -->
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">ONE</a>
+								</li>
+								
+								<li>
+									<a href="#">TWO</a>
+								</li>
+								
+								<li>
+									<a href="#">THREE</a>
+								</li>
+								
+								<li class="divider"></li>
+								
+								<li class="dropdown-header">FOUR</li>
+								
+								<li>
+									<a href="#">FIVE</a>
+								</li>
+								
+								<li>
+									<a href="#">SIX</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+						
+					<form class="navbar-form pull-left">
+						<input type="text" class="form-control" placeholder="Search this site..." id="searchInput">
+					</form><!-- end navbar-form -->
+					<button type="submit" class="btn btn-default" id="submitINheader">
+						<span class="glyphicon glyphicon-search pull-left"></span>
+					</button>
+						<!--      ACCOUNT DETAILS     -->
+					<ul class="nav navbar-nav pull-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> My Account <strong class="caret" id="strongcaret"></strong></a>
+							
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings<span class="badge">5</span></a>
+								</li>
+								
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-refresh"></span> Update Profile<span class="badge">2</span></a>
+								</li>
+								
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-briefcase"></span> Billing</a>
+								</li>
+								
+								<li class="divider"></li>
+								
+								<li>
+									<a href="#"><span class="glyphicon glyphicon-off"></span> Sign out</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+<!--******************************************BODY******************************************************-->
+<div class="body">
+<!--******************************************THREE COLUMN COTAINER******************************************************-->
+									<!--FIRST COLUMN -->
+
+	<div class="col-12 firstcolumn">
+		<section class="col-sm-4 img-responsive" id="oneone">
+			<img src="images/wildlife/tiger.jpg" alt="image" class="img-responsive img-circle" id="1image">
+			<h1 class="captext"><!--<small>about</small>-->Tiger</h1>
+		</section>
+		<section class="col-sm-4 img-responsive" id="onetwo">
+			<img src="images/wildlife/animals.jpg" alt="image" class="img-responsive img-circle" id="2image">
+			<h1 class="captext"><!--<small>about</small>-->Cats</h1>
+		</section>
+		<section class="col-sm-4 img-responsive" id="onethree">
+			<img src="images/wildlife/birds.jpg" alt="image" class="img-responsive img-circle" id="3image">
+			<h1 class="captext"><!--<small>about</small>-->Birds</h1>
+		</section>
+	</div>
+	<marquee>WILD ANIMALS</marquee>
+									<!--SECOND COLUMN -->
+	<div class="col-12 secondcolumn">
+		<section class="col-sm-4 img-responsive" id="twoone">
+			<img src="images/wildlife/cats.jpg" alt="image" class="img-responsive img-circle" id="4image">
+			<h1 class="captext"><!--<small>about</small>-->Cats</h1>
+		</section>
+		<section class="col-sm-4 img-responsive" id="twotwo">
+			<img src="images/wildlife/deer.jpg" alt="image" class="img-responsive img-circle" id="5image">
+			<h1 class="captext"><!--<small>about</small>-->Deer</h1>
+		</section>
+		<section class="col-sm-4 img-responsive" id="twothree">
+			<img src="images/wildlife/eagle.jpg" alt="image" class="img-responsive img-circle" id="6image">
+			<h1 class="captext"><!--<small>about</small>-->Eagle</h1>
+		</section>
+	</div>
+	<marquee>WILD ANIMALS</marquee>
+								<!--THIRD COLUMN -->
+	<div class="col-12 thirdcolumn">
+		<section class="col-sm-4 img-responsive" id="threeone">
+			<img src="images/wildlife/monkey.jpg" alt="image" class="img-responsive img-circle" id="7image">
+			<h1 class="captext"><!--<small>about</small>-->Monkey</h1>
+		</section>
+		<section class="col-sm-4 img-responsive" id="threetwo">
+			<img src="images/wildlife/butterfly.jpg" alt="image" class="img-responsive img-circle" id="butterfly" id="8image">
+			<h1 class="captext"><!--<small>about</small>-->Butterflies</h1>
+		</section>
+		<section class="col-sm-4 img-responsive" threethree>
+			<img src="images/wildlife/tortoise.jpg" alt="image" class="img-responsive img-circle" id="9image">
+			<h1 class="captext"><!--<small>about</small>-->Tortoise</h1>
+		</section>
+	</div>
+	<marquee id="lastmarqueue">WILD ANIMALS</marquee>
+
+</div>
+<!--*************************************Footer here********************************-->
+	<!--<div class="col-12">
+		<footer>
+			<nav>
+				<p>Contact US:</p>
+				<ul>
+					<li>
+						<a href="https://www.facebook.com/" target="_blank">
+							<img src="images/footer/facebook.png" alt="facebook_logo" class="">
+						</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/" target="_blank">
+							<img src="images/footer/twitter.png" alt="twitter_logo" class="">
+						</a>
+					</li>
+					<li>
+						<a href="https://plus.google.com/explore" target="_blank">
+							<img src="images/footer/google-plus.jpg" alt="google-plus_logo" class="">
+						</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/" target="_blank">
+							<img src="images/footer/LinkedIn.jpg" alt="LinkedIn_logo" class="">
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</footer>
+	</div>-->
+	<footer>
+			<div class="container">
+				<div class="row" id="footertext">
+					<div class="col-sm-3">
+					<h6>Copyright &copy; 2016. All rights reserved</h6>
+					</div><!-- end col-sm-2 -->					
+					<div class="col-sm-2">
+						<h6 id="navigationINfooter">Navigation</h6>
+						<ul class="unstyled">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Links</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div><!-- end col-sm-2 -->
+					
+					<div class="col-sm-5">
+						<h6 id="followusINfooter">Follow Us</h6>
+						<ul class="unstyled">
+							<li><a href="#">Twitter</a></li>
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Google Plus</a></li>
+						</ul>
+					</div><!-- end col-sm-2 -->
+					
+					<div class="col-sm-2">
+						<h6 id="last">Coded with <span class="glyphicon glyphicon-heart"></span> by VaIbHaV</h6>
+					</div><!-- end col-sm-2 -->
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</footer>
+</div>
+</body>
+</html>
